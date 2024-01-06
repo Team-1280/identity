@@ -1,0 +1,172 @@
+/* CSS Reset */
+@import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
+
+/* Font faces */
+@font-face {
+    font-family: Oswald;
+    src: url('../fonts/Oswald-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: Liberator;
+    src: url('../fonts/Liberator-Heavy.otf') format('opentype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Liberator;
+    src: url('../fonts/Liberator-Medium.otf') format('opentype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Liberator;
+    src: url('../fonts/Liberator-Light.otf') format('opentype');
+    font-weight: lighter;
+}
+
+/* CSS Variables for colors and fonts */
+:root {
+    --primary-color: #FCC307;
+    --secondary-color: #2A2A2A;
+    --text-color: #fff;
+    --accent-color: #7A427D;
+    --text-alt: #212121;
+    --text-font-family: 'Oswald', serif;
+    --text-font-weight: 300;
+    --header-font-family: 'Liberator', serif;
+    --header-font-weight: bold;
+}
+
+body {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    font-family: var(--text-font-family);
+    font-weight: var(--text-font-weight);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--header-font-family);
+    font-weight: var(--header-font-weight);
+}
+
+h2 {
+    font-size: 32px;
+}
+
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Custom CSS */
+header {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 48px;
+    margin-bottom: 0;
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+header ul li {
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+main,
+footer {
+    padding: 20px;
+    text-align: center;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main section {
+    margin: 0;
+    width: 100%;
+}
+
+main section p {
+    width: 30%;
+    margin: auto;
+    font-size: 20px;
+}
+
+
+/* Hide all sections except the first one */
+section:not(:first-of-type) {
+    display: none;
+}
+
+/* Active tab styling */
+.active {
+    color: var(--secondary-color) !important;
+}
+
+.logo-item {
+    text-align: center;
+    margin: 20px;
+    display: grid;
+    flex-direction: column;
+    position: relative;
+}
+
+.logo-item img {
+    max-width: 200px;
+    justify-self: center;
+}
+
+.download-options {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.download-options a {
+    margin: 5px 0;
+    text-decoration: none;
+    color: #333;
+}
+
+.download-options a:hover {
+    text-decoration: underline;
+}
+
+#logos {
+    display: flex;
+    justify-content: center;
+}
