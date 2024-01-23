@@ -6,4 +6,5 @@ You can view these branding and identity resources on our website: <https://team
 ## FAQ
 
 ### Can I use these assets?
+
 No, unless we say you can. See our license for more information.
